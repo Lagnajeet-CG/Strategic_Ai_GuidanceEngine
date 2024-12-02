@@ -33,15 +33,16 @@ st.markdown( """
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
         
         body {
-            font-family: 'Roboto', sans-serif;
+                 font-family: 'Roboto', sans-serif;
             color: #333333;
             background-color: #262939;
-            background-image: url('path/to/your/image.jpg'); /* Update with your image path */
-            background-size: cover; /* Ensures the image covers the entire screen */
-            background-repeat: no-repeat; /* Prevents the image from repeating */
-            background-attachment: fixed; /* Keeps the image fixed during scrolling */
         }
-        
+
+        /* Sidebar styling */
+        [data-testid="stSidebar"] {
+            background-color: #158d8b; /* Set your desired sidebar background color */
+        }
+
         h1 {
             font-weight: bold;
             color: #1E90FF;
