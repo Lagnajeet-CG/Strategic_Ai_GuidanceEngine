@@ -28,26 +28,44 @@ project_id = 'data-driven-cx'
 client = bigquery.Client(credentials=credentials, project=project_id)
 
 # Custom CSS for modern look and feel
-st.markdown( """
+st.markdown("""
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
         
         body {
-                 font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto', sans-serif;
             color: #333333;
             background-color: #262939;
         }
 
         /* Chatbot section styling */
         .stChatMessage {
-            background-image: url('Chat-bg.png'); /* Replace with your image file name */
-            background-size: cover;
-            background-position: center;
-            color: #fff; /* Adjust text color for readability */
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 10px;
+            margin: 10px 0;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        /* Bot messages */
+        .stChatMessage .bot-message {
+            background-color: #008080; /* Teal color for bot */
+            color: #fff; /* White text for contrast */
+            padding: 10px 15px;
+            border-radius: 15px 15px 15px 0;
+            max-width: 70%;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+        }
+
+        /* User messages */
+        .stChatMessage .user-message {
+            background-color: #f1f1f1; /* Light gray for user */
+            color: #000; /* Black text for readability */
+            padding: 10px 15px;
+            border-radius: 15px 15px 0 15px;
+            max-width: 70%;
+            margin-left: auto;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: right;
         }
 
         /* Sidebar styling */
@@ -122,6 +140,7 @@ st.markdown( """
         }
     </style>
 """, unsafe_allow_html=True)
+
 
 # App title and description
 st.markdown('<h1>Strategic AI Guidance Engine</h1>', unsafe_allow_html=True)
