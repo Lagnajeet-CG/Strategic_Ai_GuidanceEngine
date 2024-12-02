@@ -22,6 +22,10 @@ service_account_info = st.secrets["GCP_SERVICE_ACCOUNT_KEY"]
 credentials = service_account.Credentials.from_service_account_info(service_account_info)
 
 
+# Specify the background image URL (make sure the image is publicly accessible if hosted on GitHub)
+background_image_url = "https://github.com/your-repo-path/Chat-bg.png"  # Update with your actual GitHub path
+
+
 
 # Set up BigQuery client
 project_id = 'data-driven-cx'
@@ -33,9 +37,13 @@ st.markdown("""
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
         
         body {
+            background-color: #1e1e1e;  /* Dark background color */
+            background-image: url('""" + background_image_url + """');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #F0F2F6;  /* Text color */
             font-family: 'Roboto', sans-serif;
-            color: #333333;
-            background-color: #262939;
         }
 
         /* Chatbot section styling */
