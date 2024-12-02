@@ -44,7 +44,7 @@ st.markdown("""
         }
         
         .sidebar .sidebar-content {
-            background-color: #FFFFFF;
+            background-color: #158d8b;
         }
         
         .stTextInput > div {
