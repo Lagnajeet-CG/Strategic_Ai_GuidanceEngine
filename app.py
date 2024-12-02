@@ -28,7 +28,7 @@ project_id = 'data-driven-cx'
 client = bigquery.Client(credentials=credentials, project=project_id)
 
 # Custom CSS for modern look and feel
-st.markdown("""
+st.markdown(
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
         
@@ -108,7 +108,7 @@ st.markdown("""
             background-color: #2D2D2D;
         }
     </style>
-""", unsafe_allow_html=True)
+, unsafe_allow_html=True)
 
 # App title and description
 st.markdown('<h1>Strategic AI Guidance Engine🤖</h1>', unsafe_allow_html=True)
