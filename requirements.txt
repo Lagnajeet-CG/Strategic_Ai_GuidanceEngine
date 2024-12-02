@@ -1,0 +1,11 @@
+streamlit
+matplotlib
+pandas
+google-cloud-bigquery
+google-auth
+google-auth-oauthlib
+plotly
+numpy
+altair
+google-generativeai
+db-dtypes
