@@ -35,7 +35,11 @@ st.markdown("""
         body {
             font-family: 'Roboto', sans-serif;
             color: #333333;
-            background-color: #F0F2F6;
+            background-color: #262939;
+            background-image: url('path/to/your/image.jpg'); /* Update with your image path */
+            background-size: cover; /* Ensures the image covers the entire screen */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-attachment: fixed; /* Keeps the image fixed during scrolling */
         }
         
         h1 {
