@@ -38,6 +38,18 @@ st.markdown( """
             background-color: #262939;
         }
 
+        /* Chatbot section styling */
+        .stChatMessage {
+            background-image: url('Chat-bg.png'); /* Replace with your image file name */
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Adjust text color for readability */
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
         /* Sidebar styling */
         [data-testid="stSidebar"] {
             background-color: #158d8b; /* Set your desired sidebar background color */
