@@ -37,13 +37,9 @@ st.markdown("""
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
         
         body {
-            background-color: #1e1e1e;  /* Dark background color */
-            background-image: url('""" + background_image_url + """');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #F0F2F6;  /* Text color */
             font-family: 'Roboto', sans-serif;
+            color: #333333;
+            background-color: #262939;
         }
 
         /* Chatbot section styling */
