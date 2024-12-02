@@ -23,7 +23,7 @@ credentials = service_account.Credentials.from_service_account_info(service_acco
 
 
 # Specify the background image URL (make sure the image is publicly accessible if hosted on GitHub)
-background_image_url = "https://github.com/your-repo-path/Chat-bg.png"  # Update with your actual GitHub path
+background_image_url = "https://github.com/Lagnajeet-CG/Strategic_Ai_GuidanceEngine/blob/7c67494bf101e30d579ab98b06a3075b69f84e29/Chat-bg.png"  # Update with your actual GitHub path
 
 
 
