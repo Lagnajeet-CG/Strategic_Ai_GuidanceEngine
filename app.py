@@ -111,7 +111,7 @@ st.markdown( """
 """, unsafe_allow_html=True)
 
 # App title and description
-st.markdown('<h1>Strategic AI Guidance Engine112🤖</h1>', unsafe_allow_html=True)
+st.markdown('<h1>Strategic AI Guidance Engine🤖</h1>', unsafe_allow_html=True)
 
 # # Path to your logo
 logo_path2 = "SAGE2.png"
