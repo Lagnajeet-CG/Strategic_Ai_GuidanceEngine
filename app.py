@@ -150,7 +150,7 @@ st.markdown("""
 st.markdown('<h1>Strategic AI Guidance Engine</h1>', unsafe_allow_html=True)
 
 # # Path to your logo
-logo_path2 = "SAGE2.png"
+logo_path2 = "SAGE3.png"
 
 # Display the logo in the sidebar
 st.sidebar.image(logo_path2, use_container_width=True)
